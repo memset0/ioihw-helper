@@ -2,8 +2,8 @@
 // @name         ioihw.duck.ac helper
 // @version      0.1
 // @author       memset0
-// @match        https://ioihw.duck.ac
-// @match        https://ioihw.duck.ac/*
+// @match        https://ioihw.duck-ac.cn
+// @match        https://ioihw.duck-ac.cn/*
 // ==/UserScript==
 
 (function() {
@@ -45,7 +45,7 @@
         'ioi2020_33': '曹天佑',
         'ioi2020_34': '陈峻宇',
         'ioi2020_35': '党星宇',
-        'ioi2020_36': '<span style="color:black">潘</span><span style="color:red">骏跃</span>',
+        'ioi2020_36': '潘骏跃',
         'ioi2020_37': '陈孙立',
         'ioi2020_38': '魏精',
         'ioi2020_39': '吴清月',
@@ -82,7 +82,7 @@
         'ioi2020_70': '刘宇豪'
     }
 
-    $('*').each(function () {
+    $('*').each(function() {
         if(this.innerHTML.startsWith('ioi2020_')) {
             let uid = this.innerHTML.match(/ioi2020_[0-9]+/g)[0]
             let name = dict[uid]
@@ -90,5 +90,6 @@
             this.innerHTML = '<span style="font-weight:normal">' + name + '</span>';
         }
     })
-    
+
+
 })();
