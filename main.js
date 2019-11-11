@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         ioihw.duck.ac helper
-// @version      0.1
+// @version      0.2
 // @author       memset0
 // @match        https://ioihw.duck-ac.cn
 // @match        https://ioihw.duck-ac.cn/*
@@ -83,7 +83,7 @@
     }
 
     $('*').each(function() {
-        if(this.innerHTML.startsWith('ioi2020_')) {
+        if(this.innerHTML.match(/^ioi2020_[0-9]+$/g)) {
             let uid = this.innerHTML.match(/ioi2020_[0-9]+/g)[0]
             let name = dict[uid]
             console.log(uid, name)
