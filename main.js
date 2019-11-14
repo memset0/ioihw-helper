@@ -1,9 +1,11 @@
 // ==UserScript==
 // @name         ioihw.duck.ac helper
-// @version      0.2
+// @version      0.3
 // @author       memset0
 // @match        https://ioihw.duck-ac.cn
 // @match        https://ioihw.duck-ac.cn/*
+// @updateURL    https://raw.githubusercontent.com/memset0/ioihw-helper/master/main.js
+// @downloadURL  https://raw.githubusercontent.com/memset0/ioihw-helper/master/main.js
 // ==/UserScript==
 
 (function() {
